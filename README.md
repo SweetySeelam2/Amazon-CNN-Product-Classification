@@ -1,5 +1,5 @@
 
-   # 🧠 Explainable Product Image Classifier with LIME (All Rights Reserved © Sweety Seelam)
+   # 🧠 Explainable Product Image Classifier with LIME
 
 This professional-grade AI solution classifies product images (e.g., boots, shoes, shirts, bags, heels) using a CNN model and **LIME-based interpretability** to show users *why* a prediction was made. Ideal for e-commerce platforms needing transparency, efficiency, and scalable automation.
 
