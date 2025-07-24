@@ -1,5 +1,5 @@
 
-   # 🧠 Explainable Product Image Classifier with LIME
+   # 🧠 Amazon CNN Product Image Classifier with LIME Explainer
 
 This professional-grade AI solution classifies product images (e.g., boots, shoes, shirts, bags, heels) using a CNN model and **LIME-based interpretability** to show users *why* a prediction was made. Ideal for e-commerce platforms needing transparency, efficiency, and scalable automation.
 
@@ -7,8 +7,8 @@ This professional-grade AI solution classifies product images (e.g., boots, shoe
 
 ## 🔗 Live App & GitHub Repository
 
-- 🎯 **Streamlit App**: [https://cnn-image-lime.streamlit.app](https://cnn-image-lime.streamlit.app)  
-- 📁 **GitHub Repository**: [https://github.com/sweetyseelam2/CNN_LIME_ImageClassifier](https://github.com/sweetyseelam2/CNN_LIME_ImageClassifier)
+- 🎯 [**Streamlit App**](https://cnn-image-lime.streamlit.app)  
+- 📁 [**GitHub Repository**](https://github.com/SweetySeelam2/Amazon-CNN-Product-Classification)
 
 ---
 
