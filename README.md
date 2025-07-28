@@ -117,8 +117,7 @@ streamlit run app.py
 🔗 [My Portfolio](https://sweetyseelam2.github.io/SweetySeelam.github.io/)
 ---
 
-## 📜 All Rights Reserved © Notice
+## 🔒 Proprietary & All Rights Reserved
+© 2025 Sweety Seelam. This work is proprietary and protected by copyright. All content, models, code, and visuals are © 2025 Sweety Seelam. No part of this project, app, code, or analysis may be copied, reproduced, distributed, or used for any purpose—commercial or otherwise—without explicit written permission from the author.
 
-> © 2025 Sweety Seelam. All rights reserved.  
-> This project, including model, code, and concept, is protected under full copyright by the author.  
-> **Redistribution or reuse is prohibited without written permission.**
+For licensing, commercial use, or collaboration inquiries, please contact: LinkedIn | Email: sweetyseelam2@gmail.com
