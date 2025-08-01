@@ -1,4 +1,8 @@
 
+[![Live App - Try it Now](https://img.shields.io/badge/Live%20App-Streamlit-informational?style=for-the-badge&logo=streamlit)](https://cnn-image-lime.streamlit.app/)
+
+---
+
    # 🧠 Amazon CNN Product Image Classifier with LIME Explainer
 
 This professional-grade AI solution classifies product images (e.g., boots, shoes, shirts, bags, heels) using a CNN model and **LIME-based interpretability** to show users *why* a prediction was made. Ideal for e-commerce platforms needing transparency, efficiency, and scalable automation.
