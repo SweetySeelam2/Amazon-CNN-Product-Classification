@@ -11,8 +11,8 @@ from skimage.segmentation import mark_boundaries
 import glob
 
 # === CONFIG ===
-MODEL_PATH = "cnn_baseline_final_v2.h5"
-MODEL_RELEASE_URL = "https://huggingface.co/spaces/sweetyseelam/Amazon-CNN-Product-Classification/resolve/main/cnn_baseline_final_v2.h5"
+MODEL_PATH = "cnn_baseline_final_v2.keras"
+MODEL_RELEASE_URL = "https://huggingface.co/spaces/sweetyseelam/Amazon-CNN-Product-Classification/resolve/main/cnn_baseline_final_v2.keras"
 SAMPLE_IMAGES_DIR = "sample_images"
 
 # Github RAW links (replace with YOUR username/repo as needed)
