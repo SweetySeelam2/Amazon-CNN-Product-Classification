@@ -12,10 +12,10 @@ import glob
 
 # === CONFIG ===
 MODEL_PATH = "cnn_baseline_final_v2.keras"
-MODEL_RELEASE_URL = "https://huggingface.co/spaces/sweetyseelam/Amazon-CNN-Product-Classification/resolve/main/cnn_baseline_final_v2.keras"
-SAMPLE_IMAGES_DIR = "sample_images"
+MODEL_RELEASE_URL = "https://huggingface.co/spaces/sweetyseelam/Amazon-CNN-Product-Classification-v2/resolve/main/cnn_baseline_final_v2.keras"
+SAMPLE_IMAGES_DIR = "sample_images"  # This folder must be present in HF space
 
-# Github RAW links (replace with YOUR username/repo as needed)
+# Github RAW links
 LABEL_JSON = "index_to_label.json"
 LABEL_JSON_URL = "https://raw.githubusercontent.com/SweetySeelam2/Amazon-CNN-Product-Classification/main/index_to_label.json"
 CLEAN_TEST_CSV = "clean_test.csv"
