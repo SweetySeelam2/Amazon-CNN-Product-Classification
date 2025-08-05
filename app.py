@@ -9,6 +9,9 @@ from tensorflow.keras.preprocessing import image
 from lime import lime_image
 from skimage.segmentation import mark_boundaries
 
+# === SET PAGE CONFIG FIRST! ===
+st.set_page_config(page_title="🧠 Amazon Product Classifier", layout="wide")
+
 # === CONFIG ===
 MODEL_PATH = "cnn_baseline_final_v2.keras"
 MODEL_RELEASE_URL = "https://huggingface.co/spaces/sweetyseelam/Amazon-CNN-Product-Classification-v2/resolve/main/cnn_baseline_final_v2.keras"
@@ -45,7 +48,6 @@ with open(LABEL_JSON, "r") as f:
     index_to_label = json.load(f)
 
 # --- Multi-page navigation ---
-st.set_page_config(page_title="🧠 Amazon Product Classifier", layout="wide")
 PAGES = {
     "🏠 Introduction": "intro",
     "🔍 Classifier & LIME Explanation": "predict",
