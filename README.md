@@ -1,6 +1,12 @@
-
-[![Live App - Try it Now](https://img.shields.io/badge/Live%20App-huggingface-informational?style=for-the-badge&logo=huggingface)](https://huggingface.co/spaces/sweetyseelam/Amazon-CNN-Product-Classification-v2)
-
+---
+title: Amazon-CNN-Product-Classification
+emoji: 🧠
+colorFrom: indigo
+colorTo: blue
+sdk: streamlit
+sdk_version: "1.34.0"
+app_file: app.py
+pinned: false
 ---
 
 # 🧠 Explainable Product Image Classifier with LIME (All Rights Reserved © Sweety Seelam)
