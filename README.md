@@ -1,15 +1,9 @@
----
-title: Amazon-CNN-Product-Classification
-emoji: 🧠
-colorFrom: indigo
-colorTo: blue
-sdk: streamlit
-sdk_version: "1.34.0"
-app_file: app.py
-pinned: false
+
+[![Live App - Try it Now](https://img.shields.io/badge/Live%20App-huggingface-informational?style=for-the-badge&logo=huggingface)](https://huggingface.co/spaces/sweetyseelam/Amazon-CNN-Product-Classification-v2)
+
 ---
 
-# 🧠 Explainable Product Image Classifier with LIME (All Rights Reserved © Sweety Seelam)
+# 🧠 Explainable Product Image Classifier with LIME
 
 This professional-grade AI solution classifies product images (e.g., boots, shoes, shirts, bags, heels) using a custom CNN baseline model and **LIME-based interpretability** to show users *why* a prediction was made. Ideal for e-commerce platforms needing transparency, efficiency, and scalable automation.
 
@@ -177,5 +171,6 @@ It's about more than pixels—it's about trust, automation, and the future of e-
 © 2025 Sweety Seelam. All rights reserved.
 
 This project, including its source code, trained models, datasets (where applicable), visuals, and dashboard assets, is protected under copyright and made available for educational and demonstrative purposes only.
+
 
 Unauthorized commercial use, redistribution, or duplication of any part of this project is strictly prohibited.     
