@@ -1,29 +1,42 @@
 
-[![Live App - Try it Now](https://img.shields.io/badge/Live%20App-Streamlit-informational?style=for-the-badge&logo=streamlit)](https://cnn-image-lime.streamlit.app/)
+[![Live App - Try it Now](https://img.shields.io/badge/Live%20App-huggingface-informational?style=for-the-badge&logo=huggingface)](https://huggingface.co/spaces/sweetyseelam/Amazon-CNN-Product-Classification-v2)
 
 ---
 
-   # 🧠 Amazon CNN Product Image Classifier with LIME Explainer
+# 🧠 Explainable Product Image Classifier with LIME (All Rights Reserved © Sweety Seelam)
 
-This professional-grade AI solution classifies product images (e.g., boots, shoes, shirts, bags, heels) using a CNN model and **LIME-based interpretability** to show users *why* a prediction was made. Ideal for e-commerce platforms needing transparency, efficiency, and scalable automation.
+This professional-grade AI solution classifies product images (e.g., boots, shoes, shirts, bags, heels) using a custom CNN baseline model and **LIME-based interpretability** to show users *why* a prediction was made. Ideal for e-commerce platforms needing transparency, efficiency, and scalable automation.
 
 ---
 
-## 🔗 Live App & GitHub Repository
+## 🔗 Live App & Hugging Face Repository
 
-- 🎯 [**Streamlit App**](https://cnn-image-lime.streamlit.app)  
-- 📁 [**GitHub Repository**](https://github.com/SweetySeelam2/Amazon-CNN-Product-Classification)
+- 🎯 [**Hugging Face Space: Live App & Code Repository**](https://huggingface.co/spaces/sweetyseelam/Amazon-CNN-Product-Classification-v2)                                              
+  _(Visit this link to try the live app or browse/download all project files, code, and model assets.)_
+
+---
+
+## 🔗 Dataset
+
+- **Name:** Fashion Product Images Dataset
+- **Source:** Indian e-commerce data aligned with Amazon product tagging needs.  
+  [Kaggle Dataset Link](https://www.kaggle.com/datasets/paramaggarwal/fashion-product-images-dataset)
+- **Size:** 44,450 products  
+  - `images` — High-res product photos  
+  - `styles.csv` — Metadata (articleType, masterCategory, gender, etc.)  
+  - `stylesJSONs` — Full metadata per product  
+  - `images.csv` — Links and filenames
 
 ---
 
 ## 📂 Project Overview
 
-| Feature                     | Description                                                                 |
-|----------------------------|-----------------------------------------------------------------------------|
-| 🔍 **Model**               | CNN (Conv2D + MaxPooling + Dropout + Dense Layers)                         |
-| 🧠 **Explainability**      | LIME (Local Interpretable Model-Agnostic Explanations)                     |
-| 🧾 **Use Case**            | Explainable image classification for product catalogs                      |
-| 🌐 **Interface**           | Streamlit app to upload images and view prediction + heatmap explanation   |
+| Feature                | Description                                                                   |
+|------------------------|-------------------------------------------------------------------------------|
+| 🔍 **Model**           | Custom CNN (Conv2D → MaxPooling → Dropout → Dense layers)                      |
+| 🧠 **Explainability**  | LIME (Local Interpretable Model-Agnostic Explanations)                        |
+| 🧾 **Use Case**        | Explainable image classification for product catalogs                          |
+| 🌐 **Interface**       | Streamlit app: select sample image and view prediction + LIME explanation     |
 
 ---
 
@@ -32,17 +45,45 @@ This professional-grade AI solution classifies product images (e.g., boots, shoe
 Manual product tagging is:
 - ❌ Time-consuming
 - ❌ Inconsistent
-- ❌ Lacks transparency  
-Retail giants like **Amazon**, **Walmart**, **Flipkart**, **Target**, and **Shopify** need a way to automate classification **with explanation**.
+- ❌ Lacks transparency
+
+Retail giants like **Amazon**, **Walmart**, **Flipkart**, **Target**, and **Shopify** need to automate classification **with explanation**.
 
 ---
 
 ## ✅ Solution: This Project
 
 This app allows non-technical users (e.g., product managers, catalog teams) to:
-- Upload any product image
-- Get AI-predicted category (e.g., "Heels")
+- Select a real product sample image
+- Instantly get the AI-predicted category (e.g., "Handbags")
 - See a **LIME-based explanation heatmap** highlighting the exact image regions influencing the decision
+
+---
+
+## 📦 CNN Baseline Model – Summary & Performance
+
+### 📌 Model & Training Configuration
+
+- **Model Type:** Sequential CNN  
+- **Architecture:** Conv2D → MaxPooling → Dropout → Dense  
+- **Objective:** 5-class classification of Amazon fashion product images  
+- **Input:** RGB images, 224×224×3  
+- **Loss Function:** Categorical Crossentropy  
+- **Optimizer:** Adam  
+- **Metrics:** Accuracy  
+- **Batch Size:** 32  
+- **Epochs:** 20  
+- **Callbacks:** EarlyStopping (patience=3), ReduceLROnPlateau (patience=2, factor=0.2)  
+
+### 📊 Model Performance
+
+- Accuracy improved from 49.92% (Epoch 1) to 81.68% (train, Epoch 16) and peaked at 85.47% (val, Epoch 15).
+- Loss decreased from 2.05 (train, Epoch 1) to 0.5660 (train, Epoch 16), and 1.07 (val, Epoch 1) to 0.5117 (val, Epoch 16).
+- Minimal overfitting: validation accuracy closely tracked training accuracy.
+- All model checkpoints and metadata files are included in this repository.
+
+**Note:**  
+We also tested transfer learning models (ResNet50, EfficientNetB0), but in this scenario, the custom CNN baseline consistently outperformed them in both accuracy and reliability. This makes it the optimal solution for this dataset and business use case.
 
 ---
 
@@ -53,74 +94,82 @@ This app allows non-technical users (e.g., product managers, catalog teams) to:
 | 💲 Manual Tagging Cost           | ~$1.25 per image                    |
 | 📈 Annual Product Images         | ~100,000+ (for large retailers)     |
 | 💵 Annual Cost Savings           | ~$125,000+                          |
-| ⏱️ Time Saved per Image          | ~45 seconds                         |
-| 📊 Uptime & Consistency          | 100% consistent & explainable       |
+| ⏱️ Time Saved per Image          | ~60% onboarding time                |
+| 📊 Consistency                   | 100% auditable and explainable      |
 | ✅ Audit-Readiness               | Complies with explainable AI needs  |
 
----
-
-## 🧪 Model Results & Interpretation
-
-- ✅ Trained on curated fashion product images
-- 🎯 Accuracy (on test set): **91.6%**
-- 🔍 Confidence score (example prediction): **95.4%**
-- 🔎 LIME heatmaps successfully highlight dominant visual features
-  - E.g., shoe sole, heel, or neckline
+- If integrated, this system can deliver **85.20%+ classification accuracy** on real-world product images.
+- Eliminates manual tagging, saving ~$1.25 per product.
+- At 100,000 uploads/year: ~$125,000 saved, ~60% faster onboarding, 20–25% fewer errors.
+- LIME explanations ensure transparency, auditability, and compliance (e.g., EU AI Act).
 
 ---
 
 ## 🧠 Conclusion
 
-If adopted, this solution could:
-- Modernize cataloging workflows
-- Improve trust through explainability
-- Replace expensive, slow human efforts with intelligent automation
-- Provide compliance with regulations requiring transparency (e.g., EU AI Act)
+- The custom CNN Baseline Model achieves **peak validation accuracy of 85.47%** (Epoch 15) and **final validation accuracy of 85.20%** (Epoch 16) on unseen Amazon product images (holdout set).
+- This strong result shows that even a carefully designed CNN—**without transfer learning**—delivers robust, reliable performance for large-scale e-commerce product classification.
+- LIME visual explanations make every prediction **auditable and trustworthy**, connecting AI automation with human decision-makers.
+- **Why this model?**  
+  Experiments with ResNet50 and EfficientNetB0 did **not outperform** this CNN baseline. This validates the custom model as the best professional baseline for your app and use case.
 
 ---
 
 ## 🧾 Business Recommendations
 
-If **Amazon**, **Walmart**, **Myntra**, **Shein**, or **Nykaa Fashion** adopted this:
-- They can **reduce human labor costs** and inconsistencies
-- Increase **efficiency and scalability** in onboarding new products
+If **Amazon**, **Walmart**, **Myntra**, **Shein**, **Flipkart**, or **Shopify** adopted this:
+- **Reduce manual labor costs** and inconsistencies
+- **Increase efficiency and scalability** in onboarding new products
 - Provide customers with **accurate, transparent search filters**
 - Enable **AI governance** and **model auditability** for enterprise use
 
+For future scaling:  
+The app can be upgraded to larger or deeper models as data volume and diversity increase, but for this dataset, the CNN baseline is optimal.
+
 ---
 
-## 🛠 Installation & Run Instructions
+## 📚 Project Storytelling
 
-```bash
-# Create virtual environment (optional)
-python -m venv cnn_lime_env
-source cnn_lime_env/bin/activate  # or cnn_lime_env\Scripts\activate
+Imagine an e-commerce giant launching thousands of new products every week. Traditionally, each item is manually tagged by human agents—slow, inconsistent, and costly.
 
-# Install dependencies
-pip install -r requirements.txt
+**In this project:**
+- We built a custom CNN model trained on tens of thousands of labeled images to classify products like "Sneaker", "Shirt", or "Handbag".
+- We implemented LIME to provide **visual, user-friendly explanations** for every prediction.
 
-# Launch Streamlit App
-streamlit run app.py
-```
+**The result:**  
+A reliable AI solution that doesn’t just predict—it **justifies** itself.
+
+- For each sample image:
+    - Predicts the product class with **85%+ accuracy**
+    - Shows confidence for transparency
+    - Generates a LIME heatmap of model focus
+
+**Outcome:**  
+This project demonstrates how **AI + explainability** can save $100,000+ per year, eliminate human bottlenecks, and make every model decision auditable for business and compliance.  
+It's about more than pixels—it's about trust, automation, and the future of e-commerce.
+
 ---
 
-## 👩‍💼 About the Author    
+## 👩‍💼 Author & Creator
 
-**Sweety Seelam** | Business Analyst | Aspiring Data Scientist | Passionate about building end-to-end ML solutions for real-world problems                                                                                                      
-                                                                                                                                           
-Email: sweetyseelam2@gmail.com                                                   
+**Sweety Seelam** | Business Analyst | Aspiring Data Scientist                                        
 
-🔗 **Profile Links**                                                                                                                                                                       
-[Portfolio Website](https://sweetyseelam2.github.io/SweetySeelam.github.io/)                                                         
-[LinkedIn](https://www.linkedin.com/in/sweetyrao670/)                                                                   
-[GitHub](https://github.com/SweetySeelam2)                                                             
-[Medium](https://medium.com/@sweetyseelam)
+📧 *Email*: sweetyseelam2@gmail.com   
+
+🔗 [GitHub Profile](https://github.com/SweetySeelam2)
+
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/sweetyrao670/)
+
+🔗 [Medium Profile](https://medium.com/@sweetyseelam)
+
+🔗 [My Portfolio](https://sweetyseelam2.github.io/SweetySeelam.github.io/)
 
 ---
 
 ## 🔐 Proprietary & All Rights Reserved
+
 © 2025 Sweety Seelam. All rights reserved.
 
 This project, including its source code, trained models, datasets (where applicable), visuals, and dashboard assets, is protected under copyright and made available for educational and demonstrative purposes only.
 
-Unauthorized commercial use, redistribution, or duplication of any part of this project is strictly prohibited.
+Unauthorized commercial use, redistribution, or duplication of any part of this project is strictly prohibited.     
