@@ -6,3 +6,4 @@ matplotlib
 Pillow
 lime
 scikit-image
+huggingface_hub>=0.20.3
