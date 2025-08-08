@@ -133,8 +133,8 @@ The app can be upgraded to larger or deeper models as data volume and diversity 
 Imagine an e-commerce giant launching thousands of new products every week. Traditionally, each item is manually tagged by human agents—slow, inconsistent, and costly.
 
 **In this project:**
-- We built a custom CNN model trained on tens of thousands of labeled images to classify products like "Sneaker", "Shirt", or "Handbag".
-- We implemented LIME to provide **visual, user-friendly explanations** for every prediction.
+- I have built a custom CNN model trained on tens of thousands of labeled images to classify products like "Sneaker", "Shirt", or "Handbag".
+- I have implemented LIME to provide **visual, user-friendly explanations** for every prediction.
 
 **The result:**  
 A reliable AI solution that doesn’t just predict—it **justifies** itself.
@@ -173,4 +173,5 @@ It's about more than pixels—it's about trust, automation, and the future of e-
 This project, including its source code, trained models, datasets (where applicable), visuals, and dashboard assets, is protected under copyright and made available for educational and demonstrative purposes only.
 
 Unauthorized commercial use, redistribution, or duplication of any part of this project is strictly prohibited.     
+
 
